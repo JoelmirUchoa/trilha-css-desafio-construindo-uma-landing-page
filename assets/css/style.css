@@ -1,0 +1,212 @@
+body {
+    background-color: black; 
+    /* Define o fundo da página como preto */
+}
+
+p {
+    color: white; 
+    /* Define a cor do texto dos parágrafos como branca */
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(/assets/images/banner.png); 
+    /* Cria um fundo com gradiente e imagem sobreposta */
+    background-size: cover; 
+    /* Faz a imagem de fundo cobrir todo o espaço do banner, mantendo a proporção */
+    background-repeat: no-repeat; 
+    /* Evita que a imagem de fundo se repita */
+    height: 600px; 
+    /* Define a altura do banner como 600 pixels */
+    padding-top: 60px; 
+    /* Adiciona um espaçamento de 60px no topo dentro do banner */
+    border-bottom: 1px solid #33A8DB80; 
+    /* Adiciona uma borda inferior com cor semitransparente */
+}
+
+.banner .banner-content {
+/* Estiliza o conteúdo apenas dentro do .banner para evitar conflitos com outras áreas */
+    color: white; 
+    /* Define a cor do texto dentro do banner como branca */
+    width: 600px; 
+    /* Define a largura máxima do conteúdo do banner como 600px */
+    margin: auto; 
+    /* Centraliza o conteúdo horizontalmente dentro do banner */
+    text-align: center; 
+    /* Alinha o texto do conteúdo ao centro */
+  }
+
+  .banner .logo {
+    background-color: rgba(0, 0, 0, .2); 
+    /* Define um fundo semitransparente para a área da logo */
+    height: 260px; 
+    /* Define a altura da logo como 260px */
+    width: 260px; 
+    /* Define a largura da logo como 260px */
+    margin: auto; 
+    /* Centraliza horizontalmente o contêiner da logo */
+    border-radius: 50%; 
+    /* Faz o contêiner ficar com formato circular */
+    padding: 16px; 
+    /* Adiciona um espaçamento interno de 16px ao redor do conteúdo */
+    margin-bottom: 16px; 
+    /* Adiciona uma margem inferior de 16px para separar da próxima seção */
+  }
+
+  .banner .logo img {
+    margin: auto; 
+    /* Centraliza a imagem dentro do contêiner da logo */
+    width: 100%; 
+    /* Faz a imagem ocupar toda a largura disponível do contêiner */
+    height: 100%; 
+    /* Faz a imagem ocupar toda a altura disponível do contêiner */
+    object-fit: contain; 
+    /* Ajusta a imagem para caber no contêiner sem cortar ou distorcer */
+  }
+
+  .banner h1 {
+    font-size: 2.5rem; 
+    /* Define o tamanho da fonte do título como 2.5 vezes o tamanho padrão */
+    font-weight: 900; /
+    * Define o peso da fonte como extra-negrito */
+    text-transform: uppercase; 
+    /* Transforma todo o texto em letras maiúsculas */
+    color: transparent; 
+    /* Define a cor do texto como transparente, para que o fundo gradiente seja visível */
+    background: -webkit-linear-gradient(#33A8DB, #1472B7); 
+    /* Aplica um gradiente linear com tons de azul */
+    background-clip: text; 
+    /* Faz o gradiente aparecer apenas na área do texto */
+    -webkit-background-clip: text; 
+    /* Versão para navegadores com versões mais antigas */
+  }
+
+  .banner p {
+    font-size: 1.25rem; 
+    /* Define o tamanho da fonte do parágrafo como 1.25 vezes o tamanho padrão */
+    margin: 16px 0 24px; 
+    /* Adiciona margens: 16px no topo, 0 nas laterais e 24px na parte inferior */
+  }
+  
+  .banner .banner-content button {
+    color: #31A8DD; 
+    /* Define a cor do texto do botão */
+    font-size: 1rem; 
+    /* Define o tamanho da fonte do botão como 1 vez o tamanho padrão */
+    font-weight: bold; 
+    /* Torna o texto do botão em negrito */
+    padding: 16px 32px; 
+    /* Adiciona espaçamento interno: 16px no topo e na base, e 32px nas laterais */
+    text-transform: uppercase; 
+    /* Transforma o texto do botão em letras maiúsculas */
+    letter-spacing: 4px; 
+    /* Adiciona espaçamento de 4px entre as letras */
+    background-color: transparent; 
+    /* Remove o fundo sólido do botão */
+    border-image: linear-gradient(#3BA1CD, #1572B7); 
+    /* Aplica um gradiente à borda do botão */
+    border-image-slice: 10; 
+    /* Define o comportamento do gradiente na borda */
+  }
+
+  section {
+    margin: 100px auto;
+  } 
+
+  #course-content {
+    width: 800px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #33A8DB;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  #course-content .modules-list .module {
+    color: white; 
+    width: 530px; 
+    margin: 0 auto 24px; 
+    /* Centraliza o módulo horizontalmente e adiciona uma margem inferior de 24px */
+    border: 1px solid #33A8DB;
+    background-color: #252525; 
+    /* Define o fundo do módulo com um cinza escuro */
+    padding: 16px;
+    border-radius: 100px; 
+    /* Faz as bordas do módulo arredondadas com um raio grande */
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7); 
+    /* Aplica uma sombra interna, simulando profundidade para dentro do módulo */
+  }
+  
+  #course-content .modules-list .module span {
+    color: #33A8DB;
+  }
+
+  #transform-world {
+    height: 560px; 
+    background-image: url("../images/woman-code.png"); 
+    /* Define a imagem de fundo com o caminho especificado */
+    background-size: cover; 
+    /* Faz com que a imagem de fundo cubra toda a área disponível, mantendo a proporção */
+    background-attachment: fixed; 
+    /* Fixa a imagem de fundo, criando o efeito de parallax ao rolar a página */
+    border-top: 1px solid #33A8DB80; 
+    /* Adiciona uma borda superior com cor azul semitransparente */
+    border-bottom: 1px solid #33A8DB80; 
+    /* Adiciona uma borda inferior com a mesma cor */
+    padding: 200px; 
+    /* Adiciona espaçamento interno de 200px ao redor do conteúdo */
+  }
+
+  #transform-world p {
+    font-weight: 900; 
+    /* Define o peso da fonte como extra-negrito */
+    font-size: 2.5rem; 
+    /* Define o tamanho do texto */
+    text-transform: lowercase; 
+    /* Transforma todo o texto em letras minúsculas */
+    max-width: 250px; 
+    /* Limita a largura máxima do parágrafo a 250px, evitando que ocupe muito espaço horizontal */
+    text-shadow: 3px 2px #33A8DB; 
+    /* Adiciona uma sombra azul ao texto com deslocamento horizontal de 3px e vertical de 2px */
+  }
+  
+  #professional-challenges {
+    text-align: center; 
+    /* Centraliza horizontalmente todo o conteúdo de texto dentro do contêiner */
+    width: 800px; 
+    /* Define a largura de 800px */
+  }
+  
+  #professional-challenges img {
+    margin: 32px 0; 
+    /* Adiciona margem acima e abaixo da imagem */
+  }
+  
+  footer {
+    padding: 60px 0; 
+    /* Adiciona espaçamento interno de 60px acima e abaixo */
+    text-align: center; 
+    /* Centraliza horizontalmente todo o conteúdo do rodapé */
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2)); 
+    /* Aplica um gradiente suave no fundo do rodapé */
+    border-top: 1px solid #33A8DB80; 
+    /* Adiciona uma borda superior com cor azul semitransparente */
+  }
+  
+  footer .dio-logo {
+    width: 300px; 
+    /* Define a largura máxima da logo do rodapé */
+  }
+  
+  footer a {
+    color: #33A8DB; 
+    font-weight: bold; 
+    /* Torna o texto do link em negrito */
+    text-decoration: none; 
+    /* Remove o sublinhado padrão dos links */
+  }
+  
+ 
